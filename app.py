@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 URL = 'https://api.remotar.com.br/jobs?search=desenvolvedor%20junior'
-TOKEN = 'API_KEY'
-CHAT_ID = 'USER_ID'
+TOKEN = os.getenv('API_KEY')
+CHAT_ID = os.getenv('USER_ID')
 
 vagas_enviadas = set()
 
